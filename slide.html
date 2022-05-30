@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        overflow: hidden;
+    }
+    .banner1, .banner2, .banner3{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* Images */
+    img{
+        width: 120%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        animation: zoom-out 3s linear infinite;
+    }
+    /* animation for the image */
+    @keyframes zoom-out {
+    100%{
+        width: 100%;
+    }  
+    
+    /* the slide texts */
+    }
+    .text-box{
+        width: 600px;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        color: #fff;
+        animation: text-up 12s linear infinite;
+        transform: translateY(100%);
+    }
+    /* zoom-up animation for the text */
+    @keyframes text-up {
+        10%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(0px);
+        }        
+    }
+
+    .text-box h1{
+        margin-bottom: 20px;
+    }
+    .text-box p{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 40px;
+    }
+   .text-box span{
+    background: red;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    }
+    /* Applying delay to the text */
+    .text-box1{
+        animation-delay: 0s;
+    }
+    .text-box2{
+        animation-delay: 3s;
+    }
+    .text-box3{
+        animation-delay: 6s;
+    }
+    /* animation for the slides */
+    .banner1{
+        animation: slide1 12s linear infinite;
+    }
+    .banner2{
+        animation: slide2 12s linear infinite;
+    }
+    .banner3{
+        animation: slide3 12s linear infinite;
+    }
+    @keyframes slide1 {
+        0%{
+            visibility: visible;
+        }
+        33%{
+            visibility: hidden;
+        }
+        66%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+    }
+    @keyframes slide2 {
+        0%{
+            visibility: hidden;
+        }
+        33%{
+            visibility: hidden;
+        }
+        66%{
+            visibility: visible;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+    @keyframes slide3 {
+        0%{
+            visibility: hidden;
+        }
+        33%{
+            visibility: hidden;
+        }
+        66%{
+            visibility: hidden;
+        }
+        100%{
+            visibility:visible;
+        }
+    }
+</style>
+<body>
+    <div class="banner1">
+        <img src="./images/smile-guy-women.jpeg" alt="">
+        <div class="text-box text-box1">
+            <h1>Silence is not enough</h1>
+            <span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nesciunt placeat. Eaque tempore error labore itaque. Laborum quisquam blanditiis dolorum placeat minima tempore quis ratione. Itaque impedit perferendis dolor cumque!</p>
+        </div>
+    </div>
+    <!-- second slide -->
+    <div class="banner2">
+        <img src="./images/two-guys.jpeg" alt="">
+        <div class="text-box text-box2">
+            <h1>I love myself</h1>
+            <span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nesciunt placeat. Eaque tempore error labore itaque. Laborum quisquam blanditiis dolorum placeat minima tempore quis ratione. Itaque impedit perferendis dolor cumque!</p>
+        </div>
+    </div>
+    <!-- Third slide -->
+    <div class="banner3">
+        <img src="./images/smile-women.jpg" alt="">
+        <div class="text-box text-box3">
+            <h1>Wonder shall never end</h1>
+            <span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nesciunt placeat. Eaque tempore error labore itaque. Laborum quisquam blanditiis dolorum placeat minima tempore quis ratione. Itaque impedit perferendis dolor cumque!</p>
+        </div>
+    </div>
+</body>
+</html>
